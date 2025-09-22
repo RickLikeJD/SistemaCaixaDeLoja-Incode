@@ -91,17 +91,18 @@ public class CaixaDeLoja {
                             break;
 
                         case "2": // Cartão
-                            double descontoCartao = total * 0.02; // 2% desconto
-                            total -= descontoCartao;
                             JOptionPane.showMessageDialog(null,
-                                    "Pagamento no cartão aprovado!" +
-                                            "\nTotal com 2% de desconto: " + nf.format(total));
+                                    "Pagamento com cartão aprovado!" +
+                                            "\nTotal a pagar: " + nf.format(total));
                             break;
 
                         case "3": // Pix
+                            double descontoPix = total * 0.02; // 2% desconto
+                            total -= descontoPix;
                             JOptionPane.showMessageDialog(null,
                                     "Pagamento via Pix aprovado!" +
-                                            "\nTotal a pagar: " + nf.format(total));
+                                            "\nTotal com 2% de desconto: " + nf.format(total));
+
                             break;
 
                         default:
@@ -109,7 +110,7 @@ public class CaixaDeLoja {
                             break;
                     }
 
-                    // pergunta se inicia nova compra
+                    // Iniciar nova compra
                     String novaCompra = JOptionPane.showInputDialog(
                             "Deseja iniciar uma nova compra?" +
                                     "\n1. Sim" +
