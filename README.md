@@ -20,5 +20,12 @@ A interface foi feita usando `JOptionPane`, deixando a experiência simples e in
 
 ---
 
-## 📂 Estrutura do projeto
+## ✅ Conhecimentos aplicados
+
+- **Fundamentos de Java**: variáveis, tipos, estruturas de controle de fluxo.
+- **Arrays e listas**: utilização de `ArrayList`.
+- **Tratamento de exceções**: `try/catch` para validação de entradas.
+- **Interface gráfica**: criação de diálogos interativos com `JOptionPane`.
+- **Formatação de valores monetários**: uso de `NumberFormat` para exibir valores em moeda brasileira.
+
 
