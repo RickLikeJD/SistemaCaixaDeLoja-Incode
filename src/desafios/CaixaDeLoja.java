@@ -20,7 +20,7 @@ public class CaixaDeLoja {
 
             if (opcao == null) return; // usuário cancelou
 
-            switch (opcao) {
+            switch (opcao.trim()) {
                 case "1":
                     while (true) {
                         String entrada = JOptionPane.showInputDialog("Digite o valor do produto:");
@@ -68,7 +68,7 @@ public class CaixaDeLoja {
                     );
                     if (formaPagamento == null) break;
 
-                    switch (formaPagamento) {
+                    switch (formaPagamento.trim()) {
                         case "1": // Dinheiro
                             while (true) {
                                 String valorPagoStr = JOptionPane.showInputDialog("Valor entregue pelo cliente:");
@@ -116,7 +116,7 @@ public class CaixaDeLoja {
                                     "\n1. Sim" +
                                     "\n2. Não"
                     );
-                    if ("1".equals(novaCompra)) {
+                    if ("1".equals(novaCompra.trim())) {
                         produtos.clear();
                         total = 0.0;
                         JOptionPane.showMessageDialog(null, "Nova compra iniciada!");
